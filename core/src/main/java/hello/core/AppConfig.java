@@ -20,12 +20,14 @@ public class AppConfig {
     }
 
     public OrderService orderService(){
-        return new OrderServiceImpl(
-                memberRepository(),
-                new FixDiscountPolicy());
+      //  return new OrderServiceImpl(
+      //          memberRepository(),
+      //          new FixDiscountPolicy());
+        return null;
 
     }
     public DiscountPolicy discountPolicy(){
+
         return new RateDiscountPolicy();
     }
 
